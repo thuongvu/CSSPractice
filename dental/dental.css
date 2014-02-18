@@ -110,17 +110,35 @@ section {
 	/*background-color: blue;*/
 	float: left;
 }
-.info {
+section .info {
 	/*position: relative;*/
 	/*display: inline;*/
 	/*float: left;*/
 	/*width: 300px;*/
-	background-color: blue;
+	/*background-color: blue;*/
 }
-.schedule {
+section .schedule {
 	float: right;
-	width: 420px;
-	height: 200px;
+	width: 400px;
+	/*height: 200px;*/
 	background-color: orange;
+	/*margin: 0 0 10px 0;*/
+	padding: 10px;
+
+}
+section .schedule h3 {
+	border-bottom: #000 1px solid;
 }
 
+section .info .promo-line {
+	padding: 38px;
+	text-transform: uppercase;
+	color: grey;
+	font-family: sans-serif;
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+section .schedule .comments {
+	float: right;
+}
