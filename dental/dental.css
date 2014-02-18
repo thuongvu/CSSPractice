@@ -81,6 +81,7 @@ nav .nav-phone {
 }*/
 
 aside {
+	position: relative;
 	width: 240px;
 	float: left;
 	/*padding-left: 20px;*/
@@ -110,12 +111,16 @@ section {
 	float: left;
 }
 .info {
-	float: left;
-	width: 300px;
+	/*position: relative;*/
+	/*display: inline;*/
+	/*float: left;*/
+	/*width: 300px;*/
+	background-color: blue;
 }
 .schedule {
 	float: right;
 	width: 420px;
+	height: 200px;
 	background-color: orange;
 }
 
