@@ -14,11 +14,44 @@ nav li {
 	display: inline;
 	color: #fff;
 }
+.section-top {
+	color: #fff;
+}
 div .promo {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	line-height: 1;
 }
 .line {
-	margin-bottom: 1px solid #000;
+	margin-bottom: 1px solid black;
+	width: 100px;
+}
+.top-background {
+	height: 310px;
+	width: 100%;
+	background-color: orange;
+	background: url('images/header_image.jpg');
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+.three-row {
+	width: 960px;
+	height: 320px;
+	background-color: blue;
+	margin: 0 auto;
+	background-color: #dedede;
+}
+.large-slide {
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	margin-right: 8px;
+	box-shadow: 2px 2px 2px #B4B4B4;
+	width: 308px;
+	height: 315px;
+	background-color: #fff;
 }
