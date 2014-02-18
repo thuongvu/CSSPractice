@@ -26,8 +26,14 @@ div .promo {
 	line-height: 1;
 }
 .line {
-	margin-bottom: 1px solid black;
-	width: 100px;
+	position: relative;
+	left: 180px;
+	border-bottom: 1px solid white;
+	width: 330px;
+	background-color: grey;
+	/*height: 100px;*/
+	/*padding-bottom: 10px;*/
+	margin: 10px;
 }
 .top-background {
 	height: 310px;
@@ -59,6 +65,8 @@ div .promo {
 	width: 311px;
 	height: 315px;
 	background-color: #fff;
+	color: #000;
+	/*white-space: nowrap;*/
 }
 .author-container {
 	float: left;
@@ -67,4 +75,26 @@ div .promo {
 	height: 48px;
 	position: absolute;
 	top: 210px;
+	padding: 4px 4px 0 0;
+}
+.large-slide .name {
+	position: relative;
+	left: 60px;
+	top: 14px;
+	color: blue;
+	letter-spacing: 0.0em;
+}
+.large-slide .summary {
+	color: #000;
+	position: relative;
+	top: 21px;
+	left: 10px;
+	font-size: 0.9em;
+}
+.large-slide .views {
+	color: grey;
+	position: relative;
+	top: 26px;
+	left: 10px;
+	font-size: .75em;
 }
