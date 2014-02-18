@@ -1,0 +1,16 @@
+nav {
+	/*display: inline-block;*/
+}
+nav li {
+	list-style-type: none;
+	display: inline;
+	float: left;
+}
+nav div {
+	display: inline;
+	float: left;
+}
+.blue {
+	background-color: #2595c0;
+	color: #fff;
+}
