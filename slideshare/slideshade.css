@@ -1,5 +1,6 @@
 body {
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	background-color: #dddddd;
 }
 img {
 	width: 100%;
@@ -9,13 +10,16 @@ img {
 	margin: 0 auto;
 }
 nav {
-	height: 28px;
+	height: 34px;
 	background-color: #2c2c2d;
 }
 nav li {
 	list-style-type: none;
 	display: inline;
 	color: #fff;
+}
+nav li img {
+	width: 126px;
 }
 .section-top {
 	color: #fff;
