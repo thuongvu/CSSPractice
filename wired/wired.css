@@ -1,3 +1,21 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -5,7 +23,7 @@ body {
 	font-size: 62.5%;
 }
 img {
-	/*width: 100%;*/
+	width: 100%;
 }
 div {
 	/*display: block;*/
@@ -19,9 +37,13 @@ div {
 }
 #header {
 	color: #fff;
+	/*background-color: orange;*/
+	width: 1000px;
+	height: 90px;
+	position: relative;
 }
 #content {
-	background-color: black;
+	/*background-color: black;*/
 	color: #000;
 	margin: 0;
 	padding: 0;
@@ -42,4 +64,28 @@ div {
 	width: 398px;
 	height: 82px;
 	background-color: black;
+	color: #fff;
 }
+#primary_package {
+	/*clear: right;*/
+	background-color: blue;
+	/*margin: 12px 0;*/
+	/*margin-top: 12px;*/
+	width: 1000px;
+	height: 200px;
+}
+#row1 {
+	/*margin-top: 12px;*/
+	/*width: 100;*/
+}
+.pic {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+.headline.headline1 {
+	width: 200px;
+	float: left;
+	height: 200px;
+}
+
