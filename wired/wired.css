@@ -77,23 +77,39 @@ div {
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #333333;
+	margin: 0;
+}
+#primary_package h1 {
+	margin: 0;
+}
+.row {
+	margin: 0;
 }
 #row1 {
 	/*margin-top: 12px;*/
 	/*width: 100;*/
 }
+#row2 {
+	clear: both;
+}
 .pic {
 	width: 200px;
-	height: 200px;
 	float: left;
 }
 .headline {
 	width: 380px;
 	float: left;
-	height: 200px;
 	margin: 10px;
 }
 .headline2 {
 	width: 180px;
+	float: left;
 }
-
+.headline4 {
+	width: 180px;
+	float: left;
+}
+.headline5 {
+	width: 180px;
+	float: left;
+}
