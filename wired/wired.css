@@ -68,11 +68,15 @@ div {
 }
 #primary_package {
 	/*clear: right;*/
-	background-color: blue;
-	/*margin: 12px 0;*/
-	/*margin-top: 12px;*/
+	/*background-color: blue;*/
 	width: 1000px;
 	height: 200px;
+}
+#primary_package h5 {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #333333;
 }
 #row1 {
 	/*margin-top: 12px;*/
@@ -83,9 +87,13 @@ div {
 	height: 200px;
 	float: left;
 }
-.headline.headline1 {
-	width: 200px;
+.headline {
+	width: 380px;
 	float: left;
 	height: 200px;
+	margin: 10px;
+}
+.headline2 {
+	width: 180px;
 }
 
