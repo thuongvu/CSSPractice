@@ -3,15 +3,41 @@
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
 .nav ul:after {
     clear: both;
 }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
 .nav ul {
     *zoom: 1;
 }
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul{
+	display: block;	
+}
+
+nav ul {
+	display: inline;
+	list-style: none;
+	position: relative;
+	padding: 0 20px;
+}
+
+nav ul li {
+	float: left;
+	margin: 5px;
+	display: block;
+}
+
+/*nav ul li a {
+	display: block;
+	padding: 25px 40px;
+}*/
+
+nav ul ul {
+	position: absolute;
+	top: 100%;
+}
+
