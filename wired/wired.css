@@ -30,7 +30,7 @@ div {
 }
 #shell {
 	width: 1000px;
-	background-color: grey;
+	/*background-color: grey;*/
 	height: 2000px;
 	margin: 0 auto;
 	text-align: left;
@@ -65,6 +65,13 @@ div {
 	height: 82px;
 	background-color: black;
 	color: #fff;
+	/*margin: 10px;*/
+}
+#stereo2 #subscribe {
+	position: relative;
+	padding: 30px;
+	top: 30px;
+	font-size: 16px;
 }
 #primary_package {
 	/*clear: right;*/
@@ -113,3 +120,6 @@ div {
 	width: 180px;
 	float: left;
 }
+
+
+
