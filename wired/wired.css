@@ -62,7 +62,6 @@ div {
 }
 #stereo2 {
 	width: 398px;
-	height: 82px;
 	background-color: black;
 	color: #fff;
 	/*margin: 10px;*/
@@ -75,9 +74,7 @@ div {
 }
 #primary_package {
 	/*clear: right;*/
-	/*background-color: blue;*/
 	width: 1000px;
-	height: 200px;
 }
 #primary_package h5 {
 	font-size: 12px;
@@ -119,6 +116,14 @@ div {
 .headline5 {
 	width: 180px;
 	float: left;
+}
+
+#nav-wrap {
+	position: relative;
+	left: -10px;
+	width: auto;
+	font-family: "calibre-1", "calibre-2", helvetica, arial, sans-serif;
+	/*background-color: #000;*/
 }
 
 
