@@ -27,14 +27,15 @@ nav ul {
 
 nav ul li {
 	float: left;
-	
-}
-
-nav ul li a {
 	display: block;
 	padding: 25px 40px;
 }
 
+/*nav ul li a {
+	display: block;
+	padding: 25px 40px;
+}
+*/
 nav ul ul {
 	/*position: absolute;*/
 	top: 100%;
