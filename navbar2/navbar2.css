@@ -28,7 +28,7 @@ nav ul {
 nav > ul > li {
 	float: left;
 	display: block;
-	padding: 25px 40px;
+	padding: 25px 60px;
 }
 
 /*nav ul li a {
@@ -46,7 +46,10 @@ nav ul ul li {
 }
 
 nav ul ul ul {
+	/*position: absolute;*/
 	top: 0;
 	left: 100%;
 }
+
+/* WHEN HOVER OVER STUFF LIKE ARTICLES, IT CAUSES INSPIRATION TO MOVE. BUG, FIX*/
 
