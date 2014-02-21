@@ -31,7 +31,7 @@ div {
 #shell {
 	width: 1000px;
 	/*background-color: grey;*/
-	height: 2000px;
+	/*height: 2000px;*/
 	margin: 0 auto;
 	text-align: left;
 }
@@ -208,4 +208,20 @@ li.secondary {
 }
 #xrail #ad {
 	width: 280px;
+}
+
+#footer {
+	font: 1em arial, helvetica, sans-serif;
+	line-height: 1.3em;
+	margin: 10px 0 10px 0;
+	clear: both;
+	color: #fff;
+}
+#footer #foot_row1 {
+	background: #222;
+	height: 30px;
+}
+#foot_row1 li {
+	display: inline;
+	color: #007CA5;
 }
