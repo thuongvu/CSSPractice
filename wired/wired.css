@@ -202,3 +202,10 @@ li.secondary {
 	line-height: 24px;
 	font-weight: 400;
 }
+#xrail {
+	float: left;
+	padding: 5px 8px;
+}
+#xrail #ad {
+	width: 280px;
+}
