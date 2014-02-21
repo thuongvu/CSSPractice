@@ -93,7 +93,7 @@ div {
 	/*margin-top: 12px;*/
 	/*width: 100;*/
 }
-#row2 {
+#primary_package #row2 {
 	clear: both;
 }
 .pic {
@@ -151,4 +151,54 @@ ul.nav-extras {
 
 li.secondary {
 	color: #00aeef;
+}
+
+#contentwell {
+	position: relative;
+	float: left;
+	/*clear: both;*/
+	margin: 10px 0 0 0;
+	width: 690px;
+	height: 200px;
+	/*background-color: grey;*/
+}
+#secondary_package * {
+	padding: 5px 8px;
+	margin: 0;
+}
+#secondary_package .pic1 {
+	width: 200px;
+	float: left;
+	/*margin-right: 10px;*/
+}
+#secondary_package .headline2 {
+	
+}
+#secondary_package h5 {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: 'calibre-1', 'calibre-2', helvetica, arial, sans-serif;
+	color: #333333;
+	font-weight: 600;
+	/*margin: 3px;*/
+	padding-bottom: 0;
+	margin-bottom: -5px;
+}
+#secondary_package .headline2 h1 {
+	/*margin: 0;*/
+	font-size: 1.6em;
+	line-height: 1.1em;
+	font-weight: 400;
+	/*margin-bottom: 20px;*/
+	/*float: left;*/
+}
+#secondary_package .headline1 {
+	width: 245px;
+	float: left;
+}
+#secondary_package .headline1 h1 {
+	/*padding: 5px 8px;*/
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
 }
