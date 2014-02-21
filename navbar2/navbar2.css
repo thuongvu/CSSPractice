@@ -27,7 +27,12 @@ nav ul {
 
 nav ul li {
 	float: left;
+	
+}
+
+nav ul li a {
 	display: block;
+	padding: 25px 40px;
 }
 
 nav ul ul {
@@ -35,4 +40,9 @@ nav ul ul {
 	top: 100%;
 	padding: 0;
 }
+nav ul ul li {
+	float: none;
+}
+
+
 
