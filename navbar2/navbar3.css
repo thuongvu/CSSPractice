@@ -1,0 +1,58 @@
+nav ul ul {
+	display: none;
+}
+nav ul li:hover > ul {
+	display: block;
+}
+/*1. the parent needs to be relative for the sub menus to be absolutely positioned*/
+/*2. will condense the width of the menu to fit*/
+nav ul {
+	list-style: none; 
+	position: relative; /*1*/
+	display: inline-table; /*2*/
+}
+
+/*3. clear floats used on list items*/
+nav ul:after {
+		content: ""; clear: both; display: block; /*3*/
+}
+
+/*4 this makes the menu items LI, (which include a's for 
+home, tutorials, articles, inspiration) float left, on a single line*/
+nav ul li {
+	float: left; /*4 */
+}
+
+/*5. menu items a, ACTUAL home, tutorials, etc, have padding*/
+/*also display block, one on top of another*/
+nav ul li a { /*5*/
+	display: block; 
+	padding: 25px 40px;
+}
+/*6. without this, menu items that are ul ul like tutorials DONT,*/
+/*affect the document flow. now that they are absolute, they dont disrupt and move other items*/
+nav ul ul { /*6*/
+	position: absolute;
+	top: 100%;
+}
+/*7. tutorials > photoshop, illustrator, web design, don't inherit float to the left, so they display vertically*/
+/*8. now we need these to be relatively positioned, because underneath them
+we will have an absolutely positioned element. these will be the contianer for submenus, 
+eg web design --> html, css*/
+nav ul ul li { /*7*/
+	float: none;
+	position: relative; /*8*/
+}
+
+nav ul ul li a {
+	padding: 15px 40px;
+}
+/*9. web design --> html, css. absolutely positioned to get out of doc flow
+100% left = specifies the left position of a positioned elemente*/
+/*10. top edge of element 0px below the edge of its containing element*/
+nav ul ul ul {
+	position: absolute;
+	left: 100%; /*9*/
+	top: 0; /*10*/
+}
+
