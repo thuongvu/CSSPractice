@@ -9,13 +9,10 @@
 .cf {
     *zoom: 1;
 }
-/*body::selection {
-	background-color: #333;
-	color: #fff;
-}*/
-div, section, aside , header, footer, nav, figure, li{
+div, section, aside , header, footer, nav, figure, li {
 	position: relative;
 }
+::selection 					{ background:#333; color:#fff; }
 html {
 	/*width: 90%;*/
 	background-color:  #daede2;
@@ -153,4 +150,37 @@ div.participation {
 	/*top: 3.5em;*/
 	padding: 5%;
 	background: rgba(234,46,73,0.9)
+}
+
+
+div.benefits {
+	background: rgba(255,255,255,0.9);
+	float: left;
+	width: 24%;
+	padding: 5%;
+	margin-top: 10%;
+}
+div.requirements {
+	background: rgba(255,255,255,0.9);
+	padding: 5%;
+	float: left;
+	width: 56%;
+	color: #000;
+}
+div.requirements p:last-child {
+	border-top: 1px solid #ea2e49;
+	margin-top: 1em;
+	padding-top: 1.5em;
+}
+
+
+footer {
+	background: rgba(246,247,146,0.9);
+	clear: both;
+	color: #fff;
+	padding: 1em 5%;
+	width: 45%;
+}
+footer p {
+	color: #000;
 }
