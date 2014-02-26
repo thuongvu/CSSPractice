@@ -10,3 +10,4 @@ An assortment of webpages I made/cloned to practice CSS.
 * "wired" - a clone of http://wired.com. NOT representative of my own independent work.
 * "cssNavbar" - following a css-only navbar tutorial from http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/.  NOT representative of my own independent work.
 * "navbar2" - following a css-only navbar tutorial from http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu.  NOT representative of my own independent work.
+* "zen" - clone of http://www.csszengarden.com/217/.  NOT representative of my own independent work.
