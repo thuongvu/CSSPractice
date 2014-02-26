@@ -9,48 +9,33 @@
 .nav ul {
     *zoom: 1;
 }
-
+/*nav ul li a (home, tutorials)*/
+/*nav ul ul li a (photoshop, illustrator, web design)*/
+/*nav ul ul li a (web design ) ul li (html css) */
 nav ul ul {
 	display: none;
 }
-
-nav > ul > li:hover > ul{
-	display: block;	
+nav ul li:hover > ul {
+	display: block;
 }
-
-nav ul {
-	display: inline;
+nav ul li {
+	float: left;
 	list-style: none;
 	position: relative;
-	/*padding: 0 20px;*/
 }
-
-nav > ul > li {
-	float: left;
+nav ul li a {
+	padding: 20px 30px;
 	display: block;
-	padding: 25px 60px;
+	position: relative;
 }
-
-/*nav ul li a {
-	display: block;
-	padding: 25px 40px;
-}
-*/
 nav ul ul {
-	/*position: absolute;*/
-	top: 100%;
-	padding: 0;
+	position: absolute;
 }
-nav ul ul li {
-	float: none;
-	/*position: absolute;*/
-}
-
-nav ul ul ul {
-	/*position: absolute;*/
-	top: 0;
+nav ul ul li ul{
+	position: absolute;
 	left: 100%;
+	top: 0;
 }
-
-/* WHEN HOVER OVER STUFF LIKE ARTICLES, IT CAUSES INSPIRATION TO MOVE. BUG, FIX*/
-
+nav ul ul li a {
+	padding: 20px 30px;
+}
