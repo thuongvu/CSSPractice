@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="csspositon.css">
+</head>
+<body>
+	<!-- =============================== A ================================= -->
+									<!-- static positioning -->
+	<!-- * cannot use offset props like top, right, bottom, left -->
+	<!-- * static does not create a new coordinate system for child elements -->
+	<style>
+	/*	.box {
+			position: static;
+			width: 200px;
+			height: 200px;
+		}
+		#box_1 {
+			background-color: #ee3e64;
+		} 
+		#box_2 {
+			background-color: #44accf;
+		} 
+		#box_3 {
+			background-color: #b7d84b;
+		} */
+	</style>
+	<!-- <div id="box_1" class="box"></div>
+	<div id="box_2" class="box"></div>
+	<div id="box_3" class="box"></div> -->
+
+
+
+	<!-- =============================== B ================================= -->
+									<!-- relative positioning -->
+	<!-- at first glance, it behaves the same way as statically positioned elements -->
+	<!-- but you can use offset properties: top, right, bottom, left -->
+	<style>
+/*		.box {
+			position: relative;
+			width: 200px;
+			height: 200px;
+		}
+		#box_1 {
+			background-color: #ee3e64;
+		} 
+		#box_2 {
+			background-color: #44accf;
+		} 
+		#box_3 {
+			background-color: #b7d84b;
+		} */
+	</style>
+<!-- 	<div id="box_1" class="box"></div>
+	<div id="box_2" class="box"></div>
+	<div id="box_3" class="box"></div> -->
+
+
+
+
+	<!-- =============================== C ================================= -->
+							<!-- relative positioning w/ offset-->
+							
+	<style>
+		.box {
+			position: relative;
+			width: 200px;
+			height: 200px;
+		}
+		#box_1 {
+			background-color: #ee3e64;
+		} 
+		#box_2 {
+			background-color: #44accf;
+			left: 200px;
+		} 
+		#box_3 {
+			background-color: #b7d84b;
+		} 
+	</style>
+	<div id="box_1" class="box"></div>
+	<div id="box_2" class="box"></div>
+	<div id="box_3" class="box"></div>
+
+</body>
+</html>
