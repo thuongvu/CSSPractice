@@ -1,0 +1,16 @@
+
+div {
+	display: block;
+}
+body {
+	background: url('images/bg1.svg') no-repeat left top,
+	url('images/bg2.svg') no-repeat right top;
+	background-size: auto 100%, auto 75%;
+	background-color: transparent;
+	background-attachment: fixed;
+	color: #fff;
+}
+
+
+
+
