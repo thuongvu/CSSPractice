@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="cssfloats.css">
+</head>
+<body>
+	<!-- =============================== B ================================= -->
+									<!-- float: none, following normal flow -->
+	<!-- in normal flow, each block element, div, p, h1, etc, stacks vertically -->
+	<style>
+/*		.block {
+			float: none;
+			width: 200px;
+			height: 200px;
+		}
+		.pink { background: #ee3e64; }
+		.blue { background: #44accf; }
+		.green { background: #b7d84b; }*/
+	</style> 
+	<!-- <div class="block pink"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div> -->
+	
+
+
+	<!-- =============================== B ================================= -->
+									<!-- float: left -->
+	<!-- floated elements are first laid out to normal flow -->
+	<!-- then taken far left or right of the parent element -->
+
+	<style>
+		/*.block {
+			float: left;
+			width: 200px;
+			height: 200px;
+		}
+		.pink { background: #ee3e64; }
+		.blue { background: #44accf; }
+		.green { background: #b7d84b; }*/
+	</style> 
+	<!-- <div class="block pink"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div> -->
+
+
+
+	<!-- =============================== D ================================= -->
+	
+	<!-- they sit next to each other, provided there is enough room in the parent ele for each ele -->
+	<style>
+		/*.block {
+			float: left;
+			width: 200px;
+			height: 200px;
+		}
+		.pink { background: #ee3e64; }
+		.blue { background: #44accf; }
+		.green { background: #b7d84b; }*/
+	</style>
+	
+<!-- 	<div class="block pink"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block pink"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block pink"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block pink"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block pink"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div> -->
+
+	
+
+	<!-- =============================== E ================================= -->
+										<!-- clearing floats -->
+	<!-- floated element is first laid out according to normal flow, then removed from normal flow -->
+	<!-- every element that follows a floated ele will behave contrary to what you expect -->
+
+	<style>
+	/*	.block {
+			width: 200px;
+			height: 200px;
+		}
+		.float { float: left; }
+		.pink { background: #ee3e64; }
+		.blue { background: #44accf; }
+		.green { background: #b7d84b; }
+		.orange { background: #E2A741; }*/
+	</style>
+
+	<!-- <div class="block pink float"></div>
+	<div class="block blue float"></div>
+	<div class="block green"></div>
+	<div class="block orange"></div>
+	
+	FLOAT the pink and blue divs
+	 the green and orange divs ARE NOT floated
+
+	pink and blue are REMOVED from normal flow
+
+	the pink and blue blocks float to the left, 
+	but the green and orange as if those blocks arent there
+
+	the green block is now hidden BEHIND the pink block, and orange below because they are block elements, therefore stacking on top of each other -->
+
+
+
+	<!-- =============================== E2 ================================= -->
+										<!-- clearing floats -->
+
+<!-- 	left, right, both, inherit, none
+	left says top edge of this element must sit below any element that is float'ing: left
+	right says element must sit beneath any element that is float'ing: right
+	clear: both tells our element that its top edge must sit below ANY element EITHER LEFT or RIGHT
+	inherit takes on clear property of parent element
+	default = none
+ -->
+	<style>
+		/*.block {
+			width: 200px;
+			height: 200px;
+		}
+		.float { float: left; }
+		.clear { clear: left; }
+		.pink { background: #ee3e64; }
+		.blue { background: #44accf; }
+		.green { background: #b7d84b; }
+		.orange { background: #E2A741; }*/
+	</style>
+
+<!-- 	<div class="block pink float"></div>
+	<div class="block blue float"></div>
+	<div class="block green clear"></div>
+	<div class="block orange"></div>
+
+	by assigning our green block to clear: left, telling it to act as if the pink block is in the normal flow, even if it's been removed
+
+	it seemingly brings our non-floated elements back into normal flow
+
+ -->
+
+
+
+ <!-- =============================== F ================================= -->
+ 									<!-- floats for layouts -->
+
+
+	<style>
+/*		#container { 			
+			width: 960px;
+			margin: 0 auto;
+		}
+		#header {
+			padding: 10px;
+		}
+		#content {				
+			float: left;
+			width: 660px;
+			background: #fff;
+		}
+		#navigation {		
+			float: right;
+			width: 300px;
+			background: #eee;
+		}
+		#navigation a {
+			display: block;
+			margin: 0 0 10px 0;
+			padding: 0 100px;
+		}
+		#footer {					
+			clear: both;          
+			background: #aaa;
+			padding: 10px;
+		}*/
+	</style>
+
+	<!-- <div id="container">
+		<div id="header">
+			<h1>Header</h1>
+		</div>
+
+		<div id="content">
+		<p>
+				#CONTAINER. using #container as a parent element to which our floated elements are relative, otherwise elements would shoot out to the far left or right of the browser window
+		</p>
+
+		<p>
+				#NAVIGATION. these are our floated elements. #content to left, #navigation to right w/ defined width for each
+		</p>
+
+		<p>
+				#FOOTER. #footer clears both. clear property brings elements following any floated elements back into the normal flow. therefore footer sits below both #content and #navigation
+		</p>
+
+		<p>
+				CLEAR:BOTH in #FOOTER. if you comment out clear: both, #footer has enough space to fit below navigation
+		</p>
+		</div>
+
+		<div id="navigation">
+			<a href="#">Nav Item</a>
+			<a href="#">Nav Item</a>
+			<a href="#">Nav Item</a>
+			<a href="#">Nav Item</a>
+		</div>
+
+		<div id="footer">
+			Footer
+		</div>
+	</div> -->
+
+
+
+</body>
+</html>
