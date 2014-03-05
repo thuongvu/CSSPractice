@@ -219,5 +219,180 @@
 
 
 
+
+	<!-- =============================== H ================================= -->
+											<!-- FLOAT FIRST -->
+						<!-- 	ordering of floated elements + ele around -->
+	<style>
+/*		body {
+			margin: 0;
+			padding: 0;
+			background: #ccc;
+		}
+		p {
+			margin: 0;
+		}
+		#container {
+			width: 280px;
+			margin: 0 auto;
+			padding: 10px;
+			background: #aaa;
+			border: 1px solid #999;
+		}
+		img {
+			float: right;
+		}*/
+	</style>
+	
+<!-- 	<div id="container" class="FLOAT FIRST">
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+		<p>This is some text contained within a small-ish box. I'm using it as an example of how placing your floated elements in different orders in your HTML can affect your layouts. For example, take a look at this great photo placeholder that should be sitting on the right.</p>
+	</div> -->
+	
+<!-- 	<div id="container" class="FLOAT NOT FIRST">
+		<p>This is some text contained within a small-ish box. I'm using it as an example of how placing your floated elements in different orders in your HTML can affect your layouts. For example, take a look at this great photo placeholder that should be sitting on the right.</p>
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+	</div> -->
+
+	<!-- the img, which is floated right, comes first before the p, and it comes out normal
+
+	img is placed after the text in the html
+	even though its floated to the right, it's no longer in the top corner where we wanted it.  it goes underneath the paragraph, sticking out of the bottom of the #container parent element
+
+	RULE OF THUMB = FLOAT FIRST
+
+	place floated elements first in markup before any non0floated elements that the floated element will interact with, such as the paragraph
+
+	the reason why the iamge is sticking out the bottom of the #container = COLLAPSING -->
+
+
+
+	<!-- =============================== J ================================= -->
+										<!-- COLLAPSING -->
+	
+
+	<!-- 	collapsing = when a parent element that contains floated elements don't expand to completely surround those elements in a way it would if the elements were not floated
+
+	floated elements are calculated in the normal flow, and THEN REMOVED, the #container element doesnt consider it within its bounds and therefore acts as if it isnt e ven there
+
+	one way to fix a collapsed parent element is to place an element with the CLEAR property AFTER our floated element.  this will cause the parent to begin reflowing after the floated element
+	
+	by placing a div with CLEAR:RIGHT, we've managed to get out #container to clear our floated image by having it recalculate its height now that there's an element sitting below it
+
+	this solution IS NOT IDEAL because it adds extra markup to our document -->
+
+	<style>
+		/*body {
+			margin: 0;
+			padding: 0;
+			background: #ccc;
+		}
+		p {
+			margin: 0;
+		}
+		#container {
+			width: 280px;
+			margin: 0 auto;
+			padding: 10px;
+			background: #aaa;
+			border: 1px solid #999;
+		}
+		img {
+			float: right;
+		}
+		.cf {
+			clear: right;
+		}*/
+	</style>
+
+	<!-- <div id="container" class="FLOAT NOT FIRST">
+		<p>This is some text contained within a small-ish box. I'm using it as an example of how placing your floated elements in different orders in your HTML can affect your layouts. For example, take a look at this great photo placeholder that should be sitting on the right.</p>
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+		<div class="cf"></div>
+	</div> -->
+
+
+
+	<!-- =============================== K ================================= -->
+								<!-- OVERFLOW: HIDDEN another clearfloat method -->
+
+	<!-- so basically, #container element is 260px across, but height isn't high enough.  
+
+	this is expected behavior because floated elements are removed from the flow, so accoring to #container, it's an empty container
+
+	ADDING OVERFLOW: HIDDEN to parent ele #CONTAINER
+
+	has some unwanted sidebars and hide content sometimes, so not the best method -->
+
+	<style>
+/*		body {
+			margin: 0;
+			padding: 0;
+			background: #ccc;
+		}
+		#container {
+			overflow: hidden;
+			width: 260px;
+			margin: 0 auto;
+			padding: 10px 0 10px 10px;
+			background: #aaa;
+			border: 1px solid #999;
+		}
+		img {
+			float: left;
+			margin: 0 5px 0 0;
+		}*/
+	</style>
+	
+	<!-- <div id="container">
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+	</div> -->
+
+
+
+	<!-- =============================== L ================================= -->
+											<!-- :after -->
+
+	<!-- the css is placing a new element after our #container element
+	this element has the content of a period
+	set to hidden with no height -->
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #ccc;
+		}
+		#container {
+			width: 260px;
+			margin: 0 auto;
+			padding: 10px 0 10px 10px;
+			background: #aaa;
+			border: 1px solid #999;
+		}
+		#container:after {
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		img {
+			float: left;
+			margin: 0 5px 0 0;
+		}
+	</style>
+	
+	<div id="container">
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+		<img src="http://alistapart.com/d/css-floats-101/image.gif"></img>
+	</div>
+
+
+
+
 </body>
 </html>
