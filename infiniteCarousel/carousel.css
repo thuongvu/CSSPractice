@@ -1,11 +1,8 @@
 .slider {
 	margin: 10px 0;
-	/*width: 60%;
-	height: 35%;*/
 	width: 600px;
 	height: 250px;
 	position: relative;
-	overflow: hidden;
 }
 
 .slider li {
@@ -13,4 +10,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+img {
+	max-width: 100%;
 }
