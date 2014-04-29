@@ -29,10 +29,27 @@ $(document).ready(function() {
 	    , $transition_time +  $time_between_slides 
 	  );
 
-});
+	// 	var lengthOfSlider = document.getElementsByClassName('slider')[0].children.length;
+	// 	var i = 0;
+	// $interval = setInterval(
+	//     function(){
+	//      	// find the one with the active class & remove it 
+	// 			var previousActive = document.getElementsByClassName('active')[0];
+	// 			document.getElementsByClassName('active')[0].removeAttribute("class", "active")
+	//      	// fade it out
+	// 			previousActive.fadeOut($transition_time);
 
-// TODO - implement most of this using vanilla javascript
-// document.getElementsByClassName('slider')[0].children[0].setAttribute("class", "lol");
-// console.log(document.getElementsByClassName('slider')[0].children);
-// document.getElementsByClassName('slider')[0].children[0].removeAttribute("class");
-// console.log(document.getElementsByClassName('slider')[0].children);
+	//      	// if index of the removed active class + 1 = length of elements of all slides, set index to -1
+	// 			if (i === lengthOfSlider + i) {
+	// 				i = -1;
+	// 			}
+	//      	// add 1 to index
+	// 			i++;
+	//      	// make the element activeclass & fade element in
+	// 			document.getElementsByClassName('slider')[0].children[i].setAttribute("class", "active");
+	// 			document.getElementsByClassName('slider')[0].children[i].fadeIn($transition_time);
+	//      }
+	//      , $transition_time +  $time_between_slides 
+	//    );
+
+});
